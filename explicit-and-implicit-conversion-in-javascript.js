@@ -28,5 +28,24 @@ if (isValid) {
 }
 
 let age = "25";
-let totalAge = age + 5;
+//Use Number() to convert the string age="25" into number to calculate the total age.
+let totalAge =Number(age) + 5;
 console.log("Total Age: " + totalAge);
+
+let inputNumber = 3;
+let inputString = "3";
+//Assign the empty string to indicate falsy values.
+let combinedString ="";
+if(combinedString)
+{
+console.log("It has empty value");
+}
+
+//Below is the example of implicit type conversion.
+combinedString= 3 + "3";
+console.log("Before type conversion results " +combinedString);
+
+//Below is the example of explicit type conversion.
+let totalSum = inputNumber +Number(inputString);
+console.log("After type conversion Results " +totalSum);
+ 
